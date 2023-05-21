@@ -1,0 +1,164 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(Azonix.otf);
+  }
+  
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: black;
+}
+
+.navbar ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: flex-end;
+	gap: 2rem;
+}
+
+.navbar li {
+    margin: 10px;
+}
+
+.navbar a {
+	font-family: myFirstFont;
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+/* Add smooth scrolling effect */
+section:not(:first-child) {
+	scroll-margin-top: 80px; /* Adjust to match navbar height */
+}
+
+.navbar a[href^="#"] {
+  transition: all 0.2s ease-in-out;
+  border-bottom: 3px solid transparent;
+}
+
+.navbar a[href^="#"]:hover {
+  color: rgb(0, 100, 100);
+  transition: 0.5s;
+  border-color: rgb(0, 100, 100);
+  
+}
+
+/* Smooth scroll animation */
+html {
+	scroll-behavior: smooth;
+}
+
+.section1, .section2, .section3 {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.section1 {
+	background-image: url(lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	border-bottom: 10px solid #000;
+	box-shadow: 0 0 10px rgb(0, 100, 100);
+}
+#txt{
+	font-family: myFirstFont;
+	color: rgb(255, 255, 255);
+	box-shadow: 0 0 10px rgb(0, 100, 100);
+}
+
+.section2 {
+	background-image: url(sec2.jpg);
+	background-size: cover;
+	height: 100vh;
+	background-position: center;
+	border-bottom: 10px solid #000;
+}
+
+.section3 {
+	background-image: url(sec3.jpg);
+	background-size: cover;
+	background-position: center;
+	border-bottom: 10px solid #000;
+}
+#txt2{
+	font-family: myFirstFont;
+	color: rgb(255, 255, 255);
+	box-shadow: 0 10 0px rgb(0, 100, 100);
+}
+
+h1 {
+	color: aliceblue;
+    font-family: myFirstFont;
+	font-size: 40px;
+	margin-bottom: 20px;
+
+}
+
+p {
+	font-size: 20px;
+	line-height: 1.5;
+	padding: 0 20%;
+}
+.maintxt{
+	color: aliceblue;
+    text-shadow: 0 0 10px #fff, 0 0 20px #00ccc2;
+}
+.container {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+  }
+ 
+h2 {
+	font-family: myFirstfont;
+	color: rgb(255, 255, 255);
+	box-shadow: 0 0 10px rgb(0, 100, 100);
+	margin-bottom: 30px;
+  }
+  
+.image-container {
+	display: flex;
+	justify-content: center;
+  }
+  
+.image-container img {
+	width: 400px;
+	height: 200px;
+	margin: 0 10px;
+	opacity: 0;
+	animation: fade-in 1s ease-in-out forwards;
+    transition: transform 0.3s ease-in-out;
+}
+.image-container img:hover {
+	transform: scale(1.1);
+  }
+  
+  @keyframes fade-in {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+footer {
+	font-family: myFirstFont;
+	background-color: black;
+	color: white;
+	padding: 20px;
+	text-align: center;
+  }
